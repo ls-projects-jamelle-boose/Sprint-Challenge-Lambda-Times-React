@@ -29,9 +29,16 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+`PropTypes leave an excellent documentation trail for your team, and also forces you to really think about the component you're trying to craft. Without PropTypes or some form of type checking, we run into the risk of passing in a wrong data type to a component, which could cause a crash or some unexpected outcome in your application.`
+
 - [ ] Describe a life-cycle event in React?
+`All React components go through a lifecycle which enables you to perform a specific task at any specific time. In order to achieve that, you can override the lifecycle methods. Methods prefixed with will are called right before something occurs (events), and methods prefixed with did are called right after something occurs.`
+
 - [ ] Explain the details of a Higher Order Component?
+`Any code you reuse, that requires state, can be a potential case for a HOC. For example, I always make a HOC when I need to deal with a modal. The HOC will take care of the open state and its open/close functions. They are simple functions but rewriting them can be annoying (and is against DRY).`
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+`A CSS Module is a CSS file in which all class names and animation names are scoped locally- by default. inline css allows you to pass the styling directly or create a variable that stores style properties and then pass it to the element. With inline styles, you also have the option to combine CSS syntax with JSX code styled-components/css in js  are my favorite choice, just import them and enjoy the features they provide. You can either put those styles in the same js file as the component or in a separate file with all other styles if you prefer. If needed, they both allow to write CSS directly too(with benefits of template literal interpolation).`
 
 ## Project Setup
 
