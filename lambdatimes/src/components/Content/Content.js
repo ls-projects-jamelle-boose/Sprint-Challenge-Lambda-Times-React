@@ -49,6 +49,8 @@ export default class Content extends Component {
         return this.state.cards
       } else if (this.state.selected === card.tab) {
         return card
+      } else {
+        return null
       }
     })
     return cards;
